@@ -7,54 +7,55 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="16dp"
-        android:layout_height="wrap_content">
+        android:paddingTop="16dp">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/player_one" />
+                android:text="@string/player_one"
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp"
-                android:layout_height="wrap_content">
+                android:padding="8dp">
 
                 <TextView
+                    android:id="@+id/player_one_sets"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="34sp"
                     android:text="0"
-                    android:id="@+id/player_one_sets"/>
+                    android:textSize="34sp" />
 
                 <TextView
+                    android:id="@+id/player_one_games"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="34sp"
                     android:text="0"
-                    android:id="@+id/player_one_games"/>
+                    android:textSize="34sp" />
 
                 <TextView
+                    android:id="@+id/player_one_points"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="34sp"
                     android:text="0"
-                    android:id="@+id/player_one_points"/>
+                    android:textSize="34sp" />
 
             </LinearLayout>
 
@@ -80,50 +81,56 @@
                 android:text="@string/set" />
         </LinearLayout>
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#4b830d" />
+
         <LinearLayout
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/player_two" />
+                android:text="@string/player_two"
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp"
-                android:layout_height="wrap_content">
+                android:padding="8dp">
 
                 <TextView
+                    android:id="@+id/player_two_sets"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="34sp"
                     android:text="0"
-                    android:id="@+id/player_two_sets"/>
+                    android:textSize="34sp" />
 
                 <TextView
+                    android:id="@+id/player_two_games"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="34sp"
                     android:text="0"
-                    android:id="@+id/player_two_games"/>
+                    android:textSize="34sp" />
 
                 <TextView
+                    android:id="@+id/player_two_points"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="34sp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:text="0"
-                    android:id="@+id/player_two_points"/>
+                    android:textSize="34sp" />
 
             </LinearLayout>
 
@@ -154,11 +161,11 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:text="@string/reset"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="resetScores"
         android:layout_margin="34dp"
-        android:layout_height="wrap_content" />
+        android:onClick="resetScores"
+        android:text="@string/reset" />
 
 </RelativeLayout>
